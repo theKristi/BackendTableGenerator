@@ -1,0 +1,16 @@
+{
+  "name": "expressjstutorial",
+  "version": "1.0.0",
+  "description": "A tutorial for express",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kristi Marks",
+  "license": "ISC"
+}

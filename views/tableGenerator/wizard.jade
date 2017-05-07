@@ -1,0 +1,9 @@
+extends layout
+block content
+	h3 Table Generator
+	form(id='form', method='get' action='tableGenerator/generate')
+		label(for='columns') Number Of Columns:
+		input.input-lg(type='text', id='columns',name='columns')
+		label(for='rows') Number Of Rows:
+		input.input-lg(type='text', id='rows',name='rows')
+		input.btn-lg(type='submit', value='Generate random table')
