@@ -10,6 +10,6 @@ var app=express();
 	
 
 
-app.get('/index', tableGenerator.tableWizard);
-app.get('/index/:columns/:rows', tableGenerator.generate);
+app.get('/', tableGenerator.tableWizard);
+app.get('/:columns/:rows', tableGenerator.generate);
 app.listen(3000);

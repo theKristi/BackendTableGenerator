@@ -1,0 +1,8 @@
+extends layout
+block content
+	div#tableContainer.col-6-md
+		table#tester.table.table-bordered
+			thead
+				each property, index in list[0]
+					th=index
+	
