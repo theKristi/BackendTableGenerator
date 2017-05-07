@@ -1,8 +1,13 @@
 extends layout
 block content
-	div#tableContainer.col-6-md
+	div#tableContainer.col-sm-6
 		table#tester.table.table-bordered
 			thead
 				each property, index in list[0]
 					th=index
+			tbody
+				each row in list
+					tr
+					each property in row
+						td=property
 	

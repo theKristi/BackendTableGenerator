@@ -8,7 +8,7 @@ exports.buildList=function(columns, rows){
 		{
 			newObject['Column'+i]=Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
 		}
-		console.log("new object"+newObject);
+		//console.log("new object"+newObject);
 		return newObject;
 	}
 	for(var j = 0; j < rows; j++) {
