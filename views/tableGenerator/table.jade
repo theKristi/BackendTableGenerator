@@ -1,13 +1,14 @@
 extends layout
 block content
 	div#tableContainer.col-sm-6
-		table#tester.table.table-bordered
+		table#tester.table.table-bordered(data-list-manipulate)
 			thead
 				each property, index in list[0]
 					th=index
 			tbody
 				each row in list
 					tr
-					each property in row
-						td=property
-	
+						each property in row
+							td=property
+	script(src='/scripts/bundle.js')
+	script(src='/scripts/bluebird.min.js')

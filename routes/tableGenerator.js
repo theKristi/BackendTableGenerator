@@ -9,6 +9,6 @@ exports.generate=function(req, res){
 	var rows=req.query.rows;
 	//console.log("in generate. rows:"+rows+" columns: "+columns);
 	var list=jsonBuilder.buildList(columns, rows);
-	//console.log(list[0])
+	//console.log("length "+list.length);
 	res.render('tableGenerator/table',{list:list});
 };
