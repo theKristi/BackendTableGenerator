@@ -1,7 +1,7 @@
 extends layout
 block content
 	div#tableContainer.col-sm-6
-		table#tester.table.table-bordered(data-list-manipulate)
+		table#tester.table.table-bordered(data-list-manipulate).hidden
 			thead
 				each property, index in list[0]
 					th=index
